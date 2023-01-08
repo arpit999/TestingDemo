@@ -25,4 +25,24 @@ class HelperTest {
         //Assert
         assertEquals(true, result)
     }
+
+    @Test
+    fun isPallindrome_inputString_a_expectedTrue() {
+        //Arrange
+        val helper = Helper()
+        //Act
+        val result = helper.isPallindrome("a")
+        //Assert
+        assertEquals(true, result)
+    }
+
+    @Test
+    fun isPallindrome_inputString_Empty_expectedTrue() {
+        //Arrange
+        val helper = Helper()
+        //Act
+        val result = helper.isPallindrome("")
+        //Assert
+        assertEquals(true, result)
+    }
 }
